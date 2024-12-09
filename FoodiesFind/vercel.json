@@ -2,26 +2,26 @@
   "version": 2,
   "builds": [
     {
-      "src": "a/index.js",
+      "src": "FoodiesFind/index.js",
       "use": "@vercel/node"
     },
     {
-      "src": "a/initDB.js",
+      "src": "FoodiesFind/initDB.js",
       "use": "@vercel/node"
     },
     {
-      "src": "a/database.sqlite",
+      "src": "FoodiesFind/database.sqlite",
       "use": "@vercel/static"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/.*",
-      "dest": "a/index.js"
+      "src": "/(.*)",
+      "dest": "FoodiesFind/index.js"
     },
     {
       "src": "/database.sqlite",
-      "dest": "a/database.sqlite"
+      "dest": "FoodiesFind/database.sqlite"
     }
   ]
 }
