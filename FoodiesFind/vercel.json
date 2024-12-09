@@ -16,12 +16,8 @@
   ],
   "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "FoodiesFind/index.js"
-    },
-    {
-      "src": "/database.sqlite",
-      "dest": "FoodiesFind/database.sqlite"
+      "source": "/(.*)",
+      "destination": "/FoodiesFind/index.js"
     }
   ]
 }
