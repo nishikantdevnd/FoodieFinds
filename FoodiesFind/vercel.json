@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "a/index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "a/initDB.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "a/database.sqlite",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/.*",
+      "dest": "a/index.js"
+    },
+    {
+      "src": "/database.sqlite",
+      "dest": "a/database.sqlite"
+    }
+  ]
+}
