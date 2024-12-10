@@ -8,10 +8,6 @@
     {
       "src": "FoodiesFind/initDB.js",
       "use": "@vercel/node"
-    },
-    {
-      "src": "FoodiesFind/database.sqlite",
-      "use": "@vercel/static"
     }
   ],
   "rewrites": [
