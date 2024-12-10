@@ -2,18 +2,18 @@
   "version": 2,
   "builds": [
     {
-      "src": "FoodiesFind/index.js",
+      "src": "/index.js",
       "use": "@vercel/node"
     },
     {
-      "src": "FoodiesFind/initDB.js",
+      "src": "/initDB.js",
       "use": "@vercel/node"
     }
   ],
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/FoodiesFind/index.js"
+      "destination": "/index.js"
     }
   ]
 }
